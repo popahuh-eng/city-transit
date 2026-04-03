@@ -1,0 +1,30 @@
+.fav-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.fav-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+}
+.fav-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.fav-card__accent { height: 4px; }
+.fav-card__body { padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.fav-card__header { display: flex; justify-content: space-between; align-items: center; }
+.fav-card__num { font-family: var(--font-heading); font-size: 1.4rem; font-weight: 800; }
+.fav-card__name { font-size: 0.9rem; font-weight: 600; color: var(--text-primary); }
+.fav-card__dir { font-size: 0.8rem; color: var(--text-secondary); }
+.fav-card__footer { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 4px; }
+.fav-remove-btn {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: rgba(239,68,68,0.1); color: var(--danger);
+  font-size: 0.75rem; display: flex; align-items: center; justify-content: center;
+  transition: var(--transition);
+}
+.fav-remove-btn:hover { background: rgba(239,68,68,0.2); transform: scale(1.1); }
+
+@media (max-width: 900px) { .fav-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .fav-grid { grid-template-columns: 1fr; } }

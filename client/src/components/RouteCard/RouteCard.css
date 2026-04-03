@@ -1,0 +1,72 @@
+.route-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.route-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,0.14);
+  box-shadow: var(--shadow-lg);
+}
+.route-card__accent {
+  height: 4px;
+  width: 100%;
+  flex-shrink: 0;
+}
+.route-card__body { padding: 20px; display: flex; flex-direction: column; gap: 16px; flex: 1; }
+
+.route-card__header { display: flex; align-items: center; justify-content: space-between; }
+.route-card__number {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  background: rgba(0,0,0,0.2);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid currentColor;
+  letter-spacing: -0.02em;
+}
+
+.route-card__direction { display: flex; flex-direction: column; gap: 6px; }
+.route-card__stop { display: flex; align-items: center; gap: 8px; }
+.route-card__stop-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.route-card__stop-dot--end {
+  border-radius: 2px;
+}
+.route-card__stop-name {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.route-card__line {
+  margin-left: 3px;
+  height: 14px;
+  width: 2px;
+  border-left: 2px dashed;
+}
+
+.route-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.route-card__interval { font-size: 0.8rem; color: var(--text-muted); }
+.route-card__interval strong { color: var(--text-secondary); }
+.route-card__cta { font-size: 0.8rem; font-weight: 600; color: var(--primary); }
+.route-card:hover .route-card__cta { color: var(--secondary); }

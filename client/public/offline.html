@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Нет сети — АстанаТранзит</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #080d1a;
+      color: #f1f5f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .icon {
+      font-size: 80px;
+      margin-bottom: 24px;
+      opacity: 0.8;
+    }
+    h1 {
+      margin: 0 0 16px;
+      font-size: 24px;
+      color: #3b82f6;
+    }
+    p {
+      color: #94a3b8;
+      margin-bottom: 32px;
+      line-height: 1.5;
+      max-width: 300px;
+    }
+    .btn {
+      background: #3b82f6;
+      color: #fff;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="icon">📡</div>
+  <h1>Вы оффлайн</h1>
+  <p>Кажется, у вас пропало соединение с интернетом. Проверьте сеть и попробуйте снова.</p>
+  <button class="btn" onclick="window.location.reload()">Обновить</button>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.notfound-page {
+  min-height: calc(100vh - var(--navbar-h));
+  display: flex; align-items: center; justify-content: center;
+  padding: 40px 20px; text-align: center;
+}
+.notfound-content { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.notfound-number {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--font-heading); font-size: clamp(5rem, 15vw, 10rem); font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(59,130,246,0.3);
+  line-height: 1;
+}
+.notfound-bus { font-size: clamp(4rem, 12vw, 8rem); -webkit-text-stroke: 0; color: var(--primary); filter: drop-shadow(0 0 20px rgba(59,130,246,0.5)); }
+.notfound-title { font-family: var(--font-heading); font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; }
+.notfound-subtitle { color: var(--text-secondary); max-width: 400px; }
